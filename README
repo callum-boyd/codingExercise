@@ -1,0 +1,19 @@
+Littlepay Java Coding exercise:
+This was created using maven in IntelliJ.
+I have the following assumptions:
+The taps.csv file is present in the running directory.
+All data in taps.csv is correctly formatted and in date order.
+There is no missing taps and therefore no tap offs without a tap on.
+All trips are within the same bus and same company.
+For incomplete trips a blank space is in the place of the end date and location.
+
+To be run locally (requires maven):
+1: mvn package
+This will package the application into a jar file in the target directory.
+There is one warning relating to the assignment of List to List<Journey> in argumentCaptor in TripProcessorIT which I'm aware of but unsure how to fix without spending more time than I think its worth.
+
+2: java -jar target/ticketCalc-1.0-SNAPSHOT.jar
+Will run the application.
+It will create a file called trips.csv in the current directory assuming a corresponding taps.csv is also in the current directory.
+There is a taps.csv and trips.csv currently in the directory.
+This is my test csv and the output it produces.
